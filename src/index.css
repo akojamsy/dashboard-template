@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@variants dark {
+  .light\:bg-primary {
+    background-color: theme('colors.light.primary');
+  }
+  .light\:text-primary {
+    color: theme('colors.light.primary');
+  }
+  .light\:bg-secondary {
+    background-color: theme('colors.light.secondary');
+  }
+  /* Define more light mode utility classes here */
+}
+
+@variants light {
+  .dark\:bg-primary {
+    background-color: theme('colors.dark.primary');
+  }
+  .dark\:text-primary {
+    color: theme('colors.dark.primary');
+  }
+  /* Define more dark mode utility classes here */
+}
+
+body {
+  font-family: 'Lato', 'sans-serif';
+}
